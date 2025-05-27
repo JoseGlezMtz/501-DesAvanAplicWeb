@@ -28,7 +28,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <button onClick={() => setShowLogin(true)}>Ir a Login</button>
+        <a href="/public/A01028517/Menú.html"><button>Link menu A01028517</button></a>
+        
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
@@ -36,6 +37,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <a href="/public/A01028418/menu.html">
+        <button>A01028418</button>
+      </a>
     </>
   );
 }
