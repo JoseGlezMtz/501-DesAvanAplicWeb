@@ -74,6 +74,7 @@ const RealTimeNotifications: React.FC = () => {
       }}
     />
     <button
+      type="button"
       onClick={sendMessage}
       style={{
         padding: '10px 16px',
