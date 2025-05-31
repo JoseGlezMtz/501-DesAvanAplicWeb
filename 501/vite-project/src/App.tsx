@@ -25,9 +25,9 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <a href="/public/A01028517/Menú.html"><button>Link menu A01028517</button></a>
-        <a href="/public/A01028517/Milestone2/Milestone2_Menu.html"><button>Link menu Milestone2</button></a>
-        <a href="/public/A01028517/Milestone3/Milestone3_Menu.html"><button>Link menu Milestone3</button></a>
+        <a href="A01028517/Menú.html"><button>Link menu A01028517</button></a>
+        <a href="A01028517/Milestone2/Milestone2_Menu.html"><button>Link menu Milestone2</button></a>
+        <a href="A01028517/Milestone3/Milestone3_Menu.html"><button>Link menu Milestone3</button></a>
 
         
         <p>
@@ -37,7 +37,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <a href="/public/A01028418/menu.html">
+      <a href="/A01028418/menu.html">
         <button>A01028418</button>
       </a>
     </>
