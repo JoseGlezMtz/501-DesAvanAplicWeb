@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-
+import { expect } from "chai";
 /**
  * Author: Nicole Dávila Hernández
  * 
@@ -41,8 +41,10 @@ describe('Login Page', () => {
     cy.get('button[type="submit"]').click();
     
     // Verify the alert popup contains the correct message
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal('Bienvenido administrador. Acceso completo.');
+    cy.window().then((win) => {
+      win.addEventListener('alert', (str: string) => {
+        expect(str).to.equal('Bienvenido administrador. Acceso completo.');
+      });
     });
   });
 
@@ -58,8 +60,10 @@ describe('Login Page', () => {
     cy.get('input[name="password"]').type('user123');
     cy.get('button[type="submit"]').click();
     
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal('Bienvenido usuario. Acceso limitado.');
+    cy.window().then((win) => {
+      win.addEventListener('alert', (str: string) => {
+        expect(str).to.equal('Bienvenido usuario. Acceso limitado.');
+      });
     });
   });
 

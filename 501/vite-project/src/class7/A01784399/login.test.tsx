@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Login from '../../class2/A01028517/login'; // Asegúrate de que la ruta sea correcta
 import '@testing-library/jest-dom';

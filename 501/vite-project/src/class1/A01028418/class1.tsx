@@ -1,4 +1,4 @@
-import React from 'react';
+
 import  Destructuring  from './components/Destructuring';
 import  TemplateLiteral  from './components/TemplateLiteral';
 import  ArrowFunction  from './components/ArrowFunction';
@@ -11,6 +11,7 @@ const Class1 = () => {
     country: "México",
     skills: ["TypeScript", "React", "Node.js"],
     activity: "cantar",
+    time: "12 00 PM"
   };
 
   return (

@@ -12,7 +12,6 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
-import { Placeholder } from 'react-admin';
 
 // Interface defining the shape of our form values
 interface TravelRequestFormValues {

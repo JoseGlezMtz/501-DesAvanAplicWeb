@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Componente con destructuring en props
-const Greeting = ({ name }) => {
+const Greeting = ({ name }: { name: string }) => {
   return (
     <h2 style={{ marginTop: "20px", color: "#007acc" }}>
       ¡Hola, {name}!
@@ -13,7 +13,7 @@ const Arrow_and_Deconstructing = () => {
   const [name, setName] = useState("");
   const [showGreeting, setShowGreeting] = useState(false);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
 

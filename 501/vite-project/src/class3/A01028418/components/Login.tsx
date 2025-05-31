@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import InputField from "../../../class2/A01028418/components/InputField";
 import Button from "../../../class2/A01028418/components/Button";
 import "../class3.css";

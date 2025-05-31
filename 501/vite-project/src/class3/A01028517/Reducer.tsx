@@ -1,7 +1,12 @@
-import React, { useState, useReducer } from "react";
+import { useState, useReducer } from "react";
+
+interface Action {
+  type: string;
+  payload?: number;
+}
 
 // Reducer para el contador
-const counterReducer = (state, action) => {
+const counterReducer = (state: number, action: Action): number => {
   switch (action.type) {
     case "increment":
       return state + 1;

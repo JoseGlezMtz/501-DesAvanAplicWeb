@@ -1,4 +1,3 @@
-import React from "react";
 import "../class1.css"
 
 const Destructuring = ({ user }: { user: { name: string; age: number; country: string; skills: string[] } }) => {

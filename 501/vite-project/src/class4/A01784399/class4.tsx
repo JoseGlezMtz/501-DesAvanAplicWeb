@@ -63,7 +63,7 @@ const TravelRequestForm = () => {
       return;
     }
 
-    data.destinosAdicionales = extraDestinations.filter(Boolean);
+    data.destinosAdicionales = extraDestinations.filter(Boolean).join(",");
 
     console.log('Form data:', data);
     alert('Solicitud enviada correctamente (demo frontend)');
