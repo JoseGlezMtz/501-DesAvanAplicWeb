@@ -1,26 +1,23 @@
-import React from "react";
+// InputField.tsx
+import * as React from "react";
 
-const InputField = ({
-  type = "text",
-  value,
-  onChange,
-  placeholder,
-}: {
+type InputFieldProps = {
   type?: string;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
-}) => {
-  return (
-    <input
-      type={type}
-      placeholder={placeholder}
-      value={value}
-      onChange={onChange}
-      style={{ padding: "10px", margin: "10px" }} 
-    />
-  );
+};
+
+const InputField = (props: InputFieldProps): React.ReactElement => {
+  const { type = "text", value, onChange, placeholder } = props;
+  
+  return React.createElement("input", {
+    type,
+    placeholder,
+    value,
+    onChange,
+    style: { padding: "10px", margin: "10px" }
+  });
 };
 
 export default InputField;
-
